@@ -1,38 +1,115 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Felipa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Meie Script", cursive;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 1.5rem auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#select {
+  width: 85vw;
+  font-family: "Felipa", cursive;
+  letter-spacing: 2px;
+  text-align-last: center;
+}
+
+.card {
+  width: 85vw;
+  margin-top: 2rem;
+  background: whitesmoke;
+}
+
+.info {
+  background: rgba(241, 238, 238, 0.897);
+  color: goldenrod;
+  border-bottom: 2px solid lightgoldenrodyellow;
+}
+
+.subtitle,
+.rate {
+  font-family: "Felipa", cursive;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.subtitle {
+  background: lightgoldenrodyellow;
+  padding: 0.3rem;
+}
+
+.rate {
+  padding: 0.1rem;
+  transform: translateY(-1rem);
+}
+
+.chart {
+  width: 60%;
+  margin: 0 auto;
+  transform: translateY(1rem);
+}
+
+.loading {
+  background: lightgoldenrodyellow;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.loading img {
+  display: grid;
+  margin: 7rem auto;
+  width: 8%;
+  opacity: 0.8;
+}
+
+.disclaimer {
+  width: 85vw;
+  border: 1px solid lightgrey;
+  background: lightgoldenrodyellow;
+}
+
+.disclaimer-title,
+.disclaimer-subtitle {
+  font-family: "Felipa", cursive;
+  letter-spacing: 4px;
+  color: grey;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.disclaimer-subtitle {
+  width: 100%;
+  background: rgb(241, 240, 240);
+  transform: translateY(-0.8rem);
+  padding: 0.1rem;
+  font-weight: 500;
+  border: 1px dotted goldenrod;
+  border-right: none;
+  border-left: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .chart {
+    width: 100%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .loading img {
+    width: 20%;
   }
 }
